@@ -2,10 +2,10 @@ PATH
   remote: .
   specs:
     digipost (0.1.0)
-      bootstrap (~> 4.0.0.alpha6)
       devise
       haml-rails (~> 1.0)
       jquery-rails
+      materialize-sass
       pg
       rails (~> 5.1.4)
 
@@ -50,13 +50,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
-    autoprefixer-rails (7.2.3)
-      execjs
     bcrypt (3.1.11)
-    bootstrap (4.0.0.beta2.1)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.3, < 2)
-      sass (>= 3.5.2)
     builder (3.2.3)
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
@@ -69,7 +63,6 @@ GEM
       warden (~> 1.2.3)
     erubi (1.7.0)
     erubis (2.7.0)
-    execjs (2.7.0)
     ffi (1.9.18)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -98,6 +91,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
+    materialize-sass (0.100.2)
+      sass (~> 3.3)
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
@@ -107,7 +102,6 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     pg (0.21.0)
-    popper_js (1.12.5)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)

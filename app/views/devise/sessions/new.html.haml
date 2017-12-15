@@ -1,17 +1,29 @@
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "off"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+.container
+  .row
+    .col.s12.l6.offset-l3
+      .card.push-s5
+        .card-panel.deep-orange.darken-2
+          %h2.white-text.center-align Log in
+        .card-content.deep-orange-text.lighten-2
+          = form_for(resource, as: resource_name, url: session_path(resource_name), class: 'col s12') do |form|                    
+            .row
+              .input-field.col.s12
+                %i.material-icons.prefix email
+                %input#email.validate{:type => "email", :name => "admin[email]", :autofocus => true}/
+                %label{"data-error" => "wrong", "data-success" => "right", :for => "email"} Email
+            .row
+              .input-field.col.s12
+                %i.material-icons.prefix mode_edit              
+                %input#password.validate{:type => "password", :name => "admin[password]", :autocomplete => 'off'}/
+                %label{:for => "password"} Password
+            - if devise_mapping.rememberable?
+              .row
+                .col.s12
+                  %input#remember_me{:type => "checkbox"}/
+                  %label{:for => "remember_me"} Remember Me
+            .actions.center-align
+              = form.submit 'Log In', :class => 'waves-effect waves-light btn deep-orange darken-2'
+        .card-action.right-align
+          = render "devise/shared/links"
+            
+        

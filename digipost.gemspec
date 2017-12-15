@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
   
   # Styling gems
   s.add_dependency 'haml-rails', '~> 1.0'
-  s.add_dependency 'bootstrap', '~> 4.0.0.alpha6'
   s.add_dependency 'jquery-rails'
+  s.add_dependency 'materialize-sass'
   
   # Auth gems
   s.add_dependency 'devise'
