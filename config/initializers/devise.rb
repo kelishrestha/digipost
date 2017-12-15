@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -266,7 +268,7 @@ Devise.setup do |config|
   # is mountable, there are some extra configurations to be taken into account.
   # The following options are available, assuming the engine is mounted as:
   #
-      # mount Digipost, at: '/digipost'
+  # mount Digipost, at: '/digipost'
   #
   # The router that invoked `devise_for`, in the example above, would be:
   config.router_name = :digipost

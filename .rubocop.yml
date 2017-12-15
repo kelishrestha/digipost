@@ -1,0 +1,30 @@
+AllCops:
+  Exclude:
+    - db/**/*
+    - config/**/*
+    - test/dummy/**/db/**/*
+    - test/dummy/config/**/*
+    - test/dummy/**/bin/*
+    - test/dummy/app/**/*
+
+  TargetRubyVersion:
+    2.4.1
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Exclude: 
+    - test/**
+
+Metrics/LineLength:
+  Max: 110
+  Exclude:
+    - app/helpers/casein/config_helper.rb
+
+Style/Documentation:
+  Exclude:
+    - db/migrate/*
+
+Metrics/BlockLength:
+  Enabled: false
