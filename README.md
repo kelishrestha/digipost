@@ -1,5 +1,5 @@
 # Digipost
-Short description and motivation.
+WebPost CMS
 
 ## Usage
 How to use my plugin.
